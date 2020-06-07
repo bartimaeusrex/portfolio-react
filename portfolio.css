@@ -1,0 +1,141 @@
+
+
+/* div.column a:link, div.column a:visited {
+text-decoration:none;
+background-color: rgba(186, 103, 109, .1);
+color:black;
+border-radius:8px;
+}
+
+div.column a:hover {
+  text-decoration:none;
+  background-color:rgba(194, 85, 93, 0.267);
+  color:black;
+  border-radius:8px;
+  }
+
+  div {
+    font-family:"Catamaran";
+    font-weight:400;
+  } */
+
+  /* p.quote {
+    border-left:1px solid black;
+    padding:10px 25px 0 25px;
+    font-family: 'IM Fell DW Pica', serif;
+    font-size:20px;
+  } */
+  
+  /* Create equal columns that floats next to each other */
+  /* .column {
+    float: left;
+    width: 50%;
+    padding: 15px;
+    text-align:justify;
+  } */
+
+    /* .row {
+    margin:0px 10%;
+  } */
+
+  /* Clear floats after the columns */
+  /* .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  } */
+
+  h2, h3 {
+    font-family:"Press Start 2P", cursive;
+    font-size:20px;
+    color:rgba(0, 0, 0, 0.473);
+  }
+
+  p#copy {
+    text-align:center;
+    font-family:"Press Start 2P", cursive;
+    font-size:20px;
+    color:rgba(0, 0, 0, 0.473);
+  }
+
+  p.firstpara::first-letter {
+    font-family:"Press Start 2P", cursive;
+    font-size:1.5em;
+    float:left;
+    padding:20px;
+    margin-right:20px;
+    border-right:1px solid black;
+    position:relative;
+    background-color:rgba(245, 218, 161, 0.342);
+    background-image:url("./images/texture_white.png");
+}
+  p.quoteauthor {
+    font-family:"Press Start 2P", cursive;
+    font-size:15px;
+    text-align:right;
+    padding-right:25px;
+    color:rgba(0, 0, 0, 0.5);
+  }
+
+  .colmiddlespan {
+    float:left;
+    width:100%;
+    height:10px;
+    background-image:url("./images/aaronburden01.jpg");
+    background-attachment:fixed;
+    margin:15px;
+    border-radius:3px;
+    text-align: center;
+    position:relative;
+  }
+  
+  /* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+.spot, #rocket1, #rocket2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
+
+#dude {
+    display: inline;
+    position:relative;
+    top:6px;
+}
+
+
+#stag, #footer {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+}
+
+#stag {
+  width: 200px;
+  padding: 15px;
+}
+
+#reinhartphoto {
+  width:200px;
+  height:200px;
+  background-image: url("./images/patrickreinhart.jpg");
+  border-radius:100%;
+  border-color:rgb(0, 0, 0);
+  background-position:center;
+  background-size:contain;
+  position: absolute;
+  top:-100px;
+  left:40%;
+}
+
+li {
+  list-style-type: square;
+}
