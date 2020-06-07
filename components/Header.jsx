@@ -13,7 +13,7 @@ const Header = styled.div`
   color:rgb(255, 255, 255);
   text-shadow: 5px 5px 10px rgb(0, 0, 0);
 `
-const Dude = styled.img`
+const Bartx = styled.img`
   display: inline;
   position:relative;
   top:6px;
@@ -21,7 +21,7 @@ const Dude = styled.img`
 
 export default () => (
   <Header>
-    <h1>PATRICK DAVID REINHART</h1>
-    <p>Web Developer <Dude src="./images/bartxsword.gif" width="30px" /> Graphic Designer</p>
+    <h1>PATRICK D. REINHART</h1>
+    <p>Web Developer <Bartx src="./images/bartxsword.gif" width="48" /> Graphic Designer</p>
   </Header>
 )

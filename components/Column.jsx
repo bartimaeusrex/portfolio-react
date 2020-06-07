@@ -2,8 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Column = styled.div`
-  width: 50%;
-  padding: 15px;
+  /* width: 50%; */
+  padding: 25px 8%;
   margin: 0 auto;
   text-align:justify;
   font-family:"Catamaran";
