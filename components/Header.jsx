@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 
 const Header = styled.div`
-  background-color: #666666;
+  background-color: #888;
   background-image: url("./images/endpapers_antique.jpg");
   background-attachment: fixed;
   background-blend-mode: multiply;

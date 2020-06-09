@@ -5,6 +5,7 @@ const Column = styled.div`
   /* width: 50%; */
   padding: 25px 8%;
   margin: 0 auto;
+  display:inline-block;
   text-align:justify;
   font-family:"Catamaran";
   font-weight:400;
