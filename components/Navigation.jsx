@@ -16,7 +16,7 @@ const Link = styled.a`
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-family:"Press Start 2P", cursive;
+  /* font-family:"Press Start 2P", cursive; */
 
   &:hover {
     background-color: #ddd;
