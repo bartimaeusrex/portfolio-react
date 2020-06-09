@@ -10,6 +10,7 @@ import Navigation from '../components/Navigation'
 const Page = styled.div`
   background-color: white;
   margin:0 auto;
+  text-decoration:none;
 `
 
 export default ({ children }) => (

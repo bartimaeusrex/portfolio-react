@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 
-
 const Doodad = styled.div`
   width:300px;
   padding: 25px;
@@ -12,7 +11,6 @@ const Doodad = styled.div`
 const Column = styled.div`
   float:left;
 `
-
 const Radio = styled.input`
   display: inline;
 `
@@ -32,9 +30,12 @@ const Button = styled.button`
   }
   &:active {
     background-color:orange;
+    position:relative;
+    top:5px;
+    left:5px;
+    box-shadow: 1px 1px 0px 0px rgba(80, 0, 0, .2);
   }
 `
-
 const SmallTitle = styled.h2`
   font-family:"Press Start 2P", cursive;
   font-size:16px;
@@ -44,52 +45,51 @@ const SmallTitle = styled.h2`
 
 // The all important actual goddang react thingamabob!!
 
-// Butterfly, Yellow - The Curious Sofa by Edward Gorey
 // Butterfly, Purple - Nights at the Circus by Angela Carter
-// Fox, Yellow       - Against the Grain by Joris-Karl Huysmans, translated by Brendan King
-// Fox, Purple       - Little Big by John Crowley
+// Butterfly, Yellow - Against the Grain by Joris-Karl Huysmans, translated by Brendan King
+// Fox, Purple  - Little Big by John Crowley
+// Fox, Yellow  - The Curious Sofa by Edward Gorey
 
 export default ({ term, setter }) => {
-  const [num1, setNum1] = useState('')
-  const [oper, setOper] = useState('+')
+  const [animal, setAnimal] = useState('fox')
+  const [color, setColor] = useState('purple')
 
-  const updateNum1 = event => setNum1(event.target.value)
+  const updateColor = event => setColor(event.target.value)
 
   const updateBook = (event) => {
-    if (Number(num1) && Number(num2)) {
-      if (message) setMessage('')
+    if (Number(yellow) && Number(num2)) {
+      if (message)
       switch (oper) {
-        case 'animal':
+        case 'yellow':
           setCalc(Number(num1) - Number(num2))
           break
-        case 'multiply':
+        case 'purple':
           setCalc(Number(num1) * Number(num2))
           break
         default:
           setCalc(Number(num1) + Number(num2))
+      }
+    } else {
+      setColor('')
     }
-  } else {
-    setMessage('Please provide valid numbers.')
-    setCalc('')
-  }
   }
 
   return (
     <>
       <div>Based (extremely loosely) on the following criteria, allow me to recommend you a good book:</div>
       <Doodad>
-      <Column>
-      <SmallTitle>Animal:</SmallTitle>
-      <Radio type="radio" id="fox" name="animal" value="fox" checked={true} />
-        <label for="fox">Fox</label><br />
-      <Radio type="radio" id="butterfly" name="animal" value="butterfly"/>
-        <label for="butterfly">Butterfly</label>
-    </Column>
-    <Column>
-      <SmallTitle>Color:</SmallTitle>
-      <Radio type="radio" id="yellow" name="color" value="yellow" checked={true} />
-        <label for="yellow">Yellow</label><br />
-      <Radio type="radio" id="purple" name="color" value="purple"/>
+        <Column>
+          <SmallTitle>Animal:</SmallTitle>
+          <Radio type="radio" id="fox" name="animal" value="fox" />
+          <label for="fox">Fox</label><br />
+          <Radio type="radio" id="butterfly" name="animal" value="butterfly" />
+          <label for="butterfly">Butterfly</label>
+        </Column>
+        <Column>
+          <SmallTitle>Color:</SmallTitle>
+          <Radio type="radio" id="yellow" name="color" value="yellow" />
+          <label for="yellow">Yellow</label><br />
+          <Radio type="radio" id="purple" name="color" value="purple" />
           <label for="purple">Purple</label>
         </Column>
       </Doodad>

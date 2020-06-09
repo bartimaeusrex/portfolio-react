@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import styled from 'styled-components'
 
 const Header = styled.div`
@@ -22,6 +23,7 @@ const Bartx = styled.img`
 export default () => (
   <Header>
     <h1>PATRICK D. REINHART</h1>
-    <p>Web Developer <Bartx src="./images/bartxsword.gif" width="48" /> Graphic Designer</p>
+    <p>Web Developer <Link to="/">
+      <Bartx src="./images/bartxsword.gif" width="48" /></Link> Graphic Designer</p>
   </Header>
 )

@@ -22,7 +22,7 @@ module.exports = {
   },
   plugins: [
     new webpack.DefinePlugin({
-      API_BASE_URL: JSON.stringify('http://localhost:8080/'),
+      API_BASE_URL: JSON.stringify('https://localhost:8080/'),
     }),
   ],
 }

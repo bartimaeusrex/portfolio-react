@@ -2,13 +2,13 @@ import express from 'express'
 import path from 'path'
 // import { getAllManufacturers, getManufacturerById } from './controllers/manufacturers'
 // import { getAllProducts, getProductsById } from './controllers/products'
-// import MainPage from './pages/Main'
+import MainPage from './pages/Main'
 
 const app = express()
 
 app.use(express.static('public'))
 
-// app.get('/pages/main', MainPage)
+app.get('/pages/main', MainPage)
 
 // app.get('/api/manufacturers/:id', getManufacturerById)
 

@@ -8,9 +8,9 @@ import Title from '../components/Title'
 
 export default () => (
   <Page>
-    <Title>Generic Book Page</Title>
+    <Title>Your book...</Title>
     <Paragraph>
-      Having chosen {animal} and {color}, may I suggest reading {book}. It's good stuff.
+      Having chosen ANIMAL and COLOR, may I suggest reading BOOK. It's good stuff.
     </Paragraph>
   </Page>
 )
