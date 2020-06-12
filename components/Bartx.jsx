@@ -8,7 +8,6 @@ const Bartx = styled.div`
   height:48px;
   background-image: url('./images/bartxsword.gif');
   background-size: contain;
-  /* background-color: ${props => props.primary ? "red" : "black"}; */
 `
 
 export default () => (

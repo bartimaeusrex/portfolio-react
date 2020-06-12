@@ -22,7 +22,7 @@ const Link = styled.a`
     background-color: #ddd;
     background-image: url("./images/texture_white.png");
     color: black;
-    border-radius:12px 0 12px 0;
+    border-radius:12px 12px 0 0;
   }
 `
 
