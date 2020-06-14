@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const LineBreak = styled.div`
+const Footer = styled.div`
   background-image:url("./images/tile_foliage.gif");
   /* display:block; */
   margin:0 auto;
@@ -12,5 +12,5 @@ const LineBreak = styled.div`
 `
 
 export default () => (
-  <LineBreak />
+  <Footer />
   )

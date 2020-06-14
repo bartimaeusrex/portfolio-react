@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
-import Button from '../components/Button'
+import Button from './Button'
 
 const Doodad = styled.div`
   width:250px;
@@ -18,6 +18,9 @@ const Column = styled.div`
 `
 const Radio = styled.input`
   display: inline;
+  & :active {
+    background-color:red;
+  }
 `
 const SmallTitle = styled.h2`
   font-family:"Press Start 2P", cursive;
@@ -26,9 +29,9 @@ const SmallTitle = styled.h2`
   text-align:left;
 `
 
-export default ({ term, setter }) => {
-  const [animal, setAnimal] = useState('fox')
-  const [color, setColor] = useState('purple')
+export default () => {
+  const [animal, setAnimal] = useState('')
+  const [color, setColor] = useState('')
 
   const updateColor = event => setColor(event.target.value)
   const updateAnimal = event => setAnimal(event.target.value)
@@ -40,18 +43,19 @@ export default ({ term, setter }) => {
       <Doodad>
         <Column>
           <SmallTitle>Color:</SmallTitle>
-          <select id="color" onChange={updateColor}>
-            <option value="purple">PURPLE</option>
-            <option value="yellow">YELLOW</option>
-          </select>
-          <br />
+          <form onChange={updateColor}>
+            <Radio type="radio" name="color" id="color" value="purple" /><label>Purple</label><br />
+            <Radio type="radio" name="color" id="color" value="yellow" /><label>Yellow</label><br />
+            <Radio type="radio" name="color" id="color" value="turquoise" /><label>Turquoise</label>
+          </form>
         </Column>
         <Column>
           <SmallTitle>Animal:</SmallTitle>
-          <select id="animal" onChange={updateAnimal}>
-            <option value="fox">FOX</option>
-            <option value="butterfly">BUTTERFLY</option>
-          </select>
+            <form onChange={updateAnimal}>
+            <Radio type="radio" name="animal" id="animal" value="fox" /> <label>Fox</label><br />
+            <Radio type="radio" name="animal" id="animal" value="butterfly" /><label>Butterfly</label><br />
+            <Radio type="radio" name="animal" id="animal" value="goat" /><label>Goat</label>
+          </form>
         </Column>
       </Doodad>
       <Link to={bookLink}><Button>BOOK, HO!</Button></Link>

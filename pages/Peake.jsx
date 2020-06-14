@@ -15,9 +15,9 @@ const BookCover = styled.img`
 export default () => (
   <Page>
     <Title>Your book...</Title>
-    <BookCover src="./images/nightsatthecircus.jpg" />
+    <BookCover src="../images/titusgroan.jpg" />
     <Paragraph>
-      May I suggest reading "Nights at the Circus" by Angela Carter? It's epic and super duper.
+      May I suggest reading "Titus Groan" by Mervyn Peake? It's epic and super duper.
     </Paragraph>
     <Title>Try again:</Title>
     <DoodadRadio />

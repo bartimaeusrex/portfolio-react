@@ -5,7 +5,7 @@ import styled from 'styled-components'
 import Page from '../components/Page'
 import Paragraph from '../components/Paragraph'
 import Title from '../components/Title'
-import Doodad from '../components/Doodad'
+import DoodadRadio from '../components/DoodadRadio'
 
 const BookCover = styled.img`
   object-fit: scale-down;
@@ -20,6 +20,6 @@ export default () => (
       May I suggest reading "Little, Big: or, The Fairies′ Parliament" by John Crowley? It's epic and super duper.
     </Paragraph>
     <Title>Try again:</Title>
-    <Doodad />
+    <DoodadRadio />
   </Page>
 )
