@@ -2,7 +2,7 @@ import React from 'react'
 import { render } from 'react-dom'
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
-import BookPage from './pages/Book'
+// import BookPage from './pages/Book'
 import BringhurstPage from './pages/Bringhurst'
 import CrowleyPage from './pages/Crowley'
 import CarterPage from './pages/Carter'
@@ -14,11 +14,13 @@ import PeakePage from './pages/Peake'
 import TolkienPage from './pages/Tolkien'
 import ErrorPage from './pages/Error'
 import MainPage from './pages/Main'
+import SkillsPage from './pages/Skills'
 
 render(
   <BrowserRouter>
     <Switch>
-      <Route path="/book" component={BookPage} />
+      <Route path="/skills" component={SkillsPage} />
+      {/* <Route path="/book" component={BookPage} /> */}
       <Route path="/purple-fox" component={CrowleyPage} />
       <Route path="/purple-butterfly" component={CarterPage} />
       <Route path="/purple-goat" component={TolkienPage} />

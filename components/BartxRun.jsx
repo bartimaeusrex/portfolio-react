@@ -8,6 +8,12 @@ const BartxRun = styled.div`
   width:42px;
   height:64px;
   background-size: contain;
+  &:hover {
+    background-image:url("./images/bartxsword.gif");
+    background-position:bottom;
+    background-repeat:no-repeat;
+    width:52px;
+    }
 `
 
 export default () => (

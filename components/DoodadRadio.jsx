@@ -10,7 +10,6 @@ const Doodad = styled.div`
   display: flex;
   justify-content: space-between;
   margin:0 auto;
-  float:inline-start;
   object-fit: scale-down;
 `
 const Column = styled.div`
@@ -18,9 +17,10 @@ const Column = styled.div`
 `
 const Radio = styled.input`
   display: inline;
-  & :active {
-    background-color:red;
-  }
+  &:checked + label {
+  /* color: red; */
+  font-weight: bold;
+}
 `
 const SmallTitle = styled.h2`
   font-family:"Press Start 2P", cursive;

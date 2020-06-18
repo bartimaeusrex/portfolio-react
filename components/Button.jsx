@@ -12,11 +12,14 @@ const Button = styled.button`
   font-family:"Press Start 2P", cursive;
   font-size:16px;
   color:rgba(0, 0, 0, 0.6);
+  transition: all 0.5s ease;
   &:hover {
     background-color:yellow;
+    transition: all 0.5s ease;
   }
   &:active {
     background-color:orange;
+    transition: all 0.5s ease;
     position:relative;
     top:2px;
     left:2px;

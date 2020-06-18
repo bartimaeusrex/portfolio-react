@@ -23,7 +23,6 @@ const Bartx = styled.img`
 export default () => (
   <Header>
     <h1>PATRICK D. REINHART</h1>
-    <p>Web Developer <Link to="/">
-      <Bartx src="./images/bartxsword.gif" width="48" /></Link> Graphic Designer</p>
+    <p>Web Developer <Link to="/"><Bartx src="./images/bartxsword.gif" width="48" /></Link> Graphic Designer</p>
   </Header>
 )
