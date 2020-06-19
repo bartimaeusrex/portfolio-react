@@ -1,0 +1,10 @@
+# Ignore built assets
+public
+
+# Ignore webpack config
+webpack.dev.js
+public
+
+pages
+components
+index_old.jsx

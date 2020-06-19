@@ -1,0 +1,49 @@
+{
+  "name": "react-calculator",
+  "version": "1.0.0",
+  "description": "In the initial commit to this project you have been provided with only an ESLint config for a React project. Your task is to create an interactive React Calculator page that responds to user input.",
+  "main": "index.jsx",
+  "dependencies": {
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-box-sizing": "0.0.2",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0",
+    "styled-components": "^5.1.1",
+    "tracery-grammar": "^2.7.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/preset-env": "^7.10.2",
+    "@babel/preset-react": "^7.9.4",
+    "@babel/register": "^7.10.1",
+    "babel-loader": "^8.1.0",
+    "babel-plugin-styled-components": "^1.10.7",
+    "babel-watch": "^7.0.0",
+    "concurrently": "^5.2.0",
+    "eslint": "^7.0.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.21.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.20.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "dev": "./node_modules/.bin/concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "./node_modules/.bin/webpack --progress --inline --config webpack.dev.js",
+    "dev:server": "./node_modules/.bin/babel-watch server.js",
+    "lint": "./node_modules/.bin/eslint --format codeframe --ext jsx .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bartimaeusrex/react-calculator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bartimaeusrex/react-calculator/issues"
+  },
+  "homepage": "https://github.com/bartimaeusrex/react-calculator#readme"
+}
