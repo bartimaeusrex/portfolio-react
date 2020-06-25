@@ -12,14 +12,17 @@ import GoreyPage from './pages/Gorey'
 import MelvillePage from './pages/Melville'
 import PeakePage from './pages/Peake'
 import TolkienPage from './pages/Tolkien'
+
 import ErrorPage from './pages/Error'
 import MainPage from './pages/Main'
+import ResourcesPage from './pages/Resources'
 import SkillsPage from './pages/Skills'
 
 render(
   <BrowserRouter>
     <Switch>
       <Route path="/skills" component={SkillsPage} />
+      <Route path="/resources" component={ResourcesPage} />
       {/* <Route path="/book" component={BookPage} /> */}
       <Route path="/purple-fox" component={CrowleyPage} />
       <Route path="/purple-butterfly" component={CarterPage} />

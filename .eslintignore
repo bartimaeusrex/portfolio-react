@@ -8,3 +8,5 @@ public
 pages
 components
 index_old.jsx
+
+.eslintrc.js
